@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bai2.css">
+    <title>Product-2</title>
+</head>
+<body>
+    <div class="container">
+        <script src="./Bai2.js"></script>
+        <form name="frm">
+            <p>
+                <label>
+                    Product Name:
+                    <input type="text" name="pname" id="pname">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Product Quantity:
+                    <input type="text" name="qty" id="qty">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Product Price:
+                    <input type="text" name="pp" id="pp">
+                </label>
+            </p>
+            <p>
+                <button type="button" onclick="add()">Add</button>
+            </p>
+        </form>
+        <table id="tbl">
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Sub-total</th>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td style="text-align: left;"><b>Total</b></td>
+                    <td id="total"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
